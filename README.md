@@ -49,14 +49,14 @@ end)
 
 ### 6. Add a Toggle (On/Off switch)
 ```lua
-local toggle = section:CreateToggle("ToggleName", function()
+local toggle = section:CreateToggle("ToggleName", function(val)
     -- toggled = true/false
 end)
 ```
 
 ### 7. Add a Slider (integer or decimal, set preciseValue to true for decimal)
 ```lua
-local slider = section:CreateSlider("Volume", 0, 100, 25, false, function()
+local slider = section:CreateSlider("Volume", 0, 100, 25, false, function(value)
     print("Slider value:", value)
 end)
 -- Change value from script
@@ -65,14 +65,14 @@ slider:SetSliderValue(50)
 
 ### 8. Color Picker
 ```lua
-section:CreateColorPicker("Pick a Color", Color3.fromRGB(0, 255, 0), function()
+section:CreateColorPicker("Pick a Color", Color3.fromRGB(0, 255, 0), function(color)
     print("Selected color:", color)
 end)
 ```
 
 ### 9. Add a Dropdown menu
 ```lua
-dropdown:Refresh({"New 1", "New 2"}, 1, function()
+dropdown:Refresh({"New 1", "New 2"}, 1, function(newVal)
     print("Dropdown refreshed selected:", newVal)
 end)
 ```
