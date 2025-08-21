@@ -22,7 +22,7 @@
 
 ### 1. Load the Library
 ```lua
-local Coasting = loadstring(game:HttpGet("URL_TO_COASTING"))()
+local Coasting = loadstring(game:HttpGet("https://raw.githubusercontent.com/RobScripter/Coasting/refs/heads/main/Source"))()
 ```
 
 ### 2. Create a Tab
